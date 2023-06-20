@@ -179,7 +179,7 @@ section{
     right:0;
     bottom:-3px;
     height: 2px;
-    background-color: rgb(20, 30, 97);
+    background-color: rgb(24, 190, 190);
     position: absolute;
     transition: width .2s linear;
 }
@@ -191,7 +191,9 @@ section{
 
 .navbar a{
     font-size: 2rem;
-    color: rgb(20, 30, 97);
+    color: rgb(59, 255, 248);
+    -webkit-text-stroke: 0.5px #000000;
+    
    
 }
 .right-nav{
