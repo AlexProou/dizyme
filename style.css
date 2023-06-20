@@ -738,14 +738,7 @@ align-items: center;
         margin-right: 15rem;
     }
 
-    .carousel-inner .item img{
-        width: 20rem;
-        height: 20rem;
-        }
-        .container_slider{
-            width: 20rem;
-            height: 20rem; 
-        }
+   
 }
 
 
