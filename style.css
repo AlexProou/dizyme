@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:wght@500;900&display=swap');
 
+
 :root{
     --main-color:rgb(71, 107, 205);
     --White:#ffffff;
@@ -24,6 +25,24 @@ html{
     scroll-behavior: smooth;
 }
 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 5rem;
+}
 
 body{
     background: var(--White);  
@@ -65,7 +84,7 @@ section{
 
 
 .header{
-    background: var(--bg);
+  /*  background:rgb(49 135 135);*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,8 +115,6 @@ section{
     
 
 }
-
-
 
 
 
@@ -140,18 +157,94 @@ section{
 
 .dropdown:hover .dropbtn {background-color: #ffffff;}
 
+.navbar {
+    margin-right: 25rem;
+    
+}
 
-.header .navbar a{
+.navbar a, .right-nav a{
     margin: 0 2rem;
-    font-size: 2.6rem;
+    
+    color: rgb(20, 30, 97);
+    text-transform: uppercase;
+    text-decoration: none;
+   
+    padding: 0;
+    margin: 0 13px;
+    position: relative;
+}
+.navbar a:before, .right-nav a:before{
+    content: '';
+    width: 0;
+    right:0;
+    bottom:-3px;
+    height: 2px;
+    background-color: rgb(20, 30, 97);
+    position: absolute;
+    transition: width .2s linear;
+}
+.navbar a:hover:before, .right-nav a:hover:before{
+    right: initial;
+    left:0;
+    width: 100%;
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: rgb(20, 30, 97);
+   
+}
+.right-nav{
+    font-size: 2rem;
+    position: fixed;
+    right:1rem;
+    top:2rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/*.navbar {
+    margin-right: 2rem;
+    
+}
+
+.navbar a{
+    margin: 0 2rem;
+    font-size: 2rem;
     color: rgb(20, 30, 97);
 }
 
-.header .navbar a:hover{
+.navbar a:before{
+    content: '';
+    width: 0;
+    right: 0;
+    bottom: -3px;
+    height: 3px;
+    background-color: rgb(25, 83, 164);
+    position: absolute;
+    transition: width .2s linear;
+}
+
+.navbar a:hover:before{
+    right: initial;
+    left: 0;
+    width: 100%;
+    
+}
+
+.nav-right {
+    margin-right: 2rem;
+    font-size: 2rem;
+    
+}
+
+/*.header .navbar a:before{
     color: rgb(74 71 155);
     border-bottom: 1rem solid var(--main-color);
     padding-bottom: .5rem;
-}
+}*/
 
 .header .icons div{
     color: rgb(89, 95, 152);
@@ -264,7 +357,7 @@ section{
         display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(89, 95, 152);
+    background-color: rgb(29, 156, 187);;
     background-size: cover;
     background-position: center;
 }
@@ -289,6 +382,7 @@ section{
 }
 
 .home p{
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1.2;
@@ -333,7 +427,7 @@ section{
 
 
 .menu .box-container .box:hover{
-    background: var(--bg);
+    background: rgb(121 230 226);
 }
 
 .menu .box-container .box:hover > *{
@@ -342,14 +436,14 @@ section{
 
 
 .blog {
-    background: rgb(110, 100, 137);
+    background: rgb(29, 156, 187);
 }
 
 
 .blog .row{
     display: flex;
     align-items: center;
-    background: rgb(90, 69, 143);
+    background: rgb(46, 96, 167);
     flex-wrap: wrap;
 }
 
@@ -385,7 +479,7 @@ section{
 }
 
 .footer{
-    background: rgb(76, 22, 212);
+    background: rgb(46, 96, 167);
     text-align: center;
 }
 
@@ -435,7 +529,11 @@ section{
 }
 
 .footer .credit span{
-    color: var(--main-color);
+    color: black;
+}
+
+.footer .credit span a:hover{
+    color: black;
 }
 
 
@@ -452,14 +550,101 @@ section{
         padding: 2rem ;
     }
 
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .navbar {
+        margin-right: 0rem;
+        
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: var(--bg);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: rgb(74 71 155);;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .header .logo img{
+        height: 10rem;
+        width: 30rem;
+        color: #fff;
+        margin-left: 15rem;
+    }
+
+    .home1 .content h3{
+     display: none;
+       
+    }
+    .home1 p{
+        font-size: 2rem;
+        font-weight: lighter;
+        line-height: 1.2;
+        padding: 1rem 0;    
+        color: rgb(42, 64, 173);
+        margin-top: 12rem;
+        text-align:  center;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .home .content h3{
+        font-size: 11.5rem;
+    }
+
+    .home .content p{
+        font-size: 2.5rem;
+    }
+    
+
+    .blog .row .image img{
+        width: 100%;
+        height: 35rem;
+    }
+    .blog .row .image{
+        flex: 1 1 45rem;
+    }
 }
 
-@media (max-width:768px) {
+
+
+
+
+@media (max-width:480px) {
 
     #menu-btn{
         display: inline-block;
     }
 
+    .navbar {
+        margin-right: 0rem;
+        
+    }
     .header .navbar{
         position: absolute;
         top: 100%; right: -100%;
