@@ -263,39 +263,10 @@ section{
 
 
 /* SLIDER */
-.slider {
-    border: 2px solid #010103;
-    max-width: 70%;
-    margin: 20px auto;
-    overflow: hidden;
-}
 
-.slider-line {
-    display: flex;
-    background: green;
-    transition: all ease 1s;
-}
-
-.slider-prev {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.9rem 3rem;
-    font-size: 1.7rem;
-    color: rgb(45, 55, 116);
-    background: var(--main-color);
-    cursor: pointer;
-   
-}
-
-.slider-next {
-     margin-top: 1rem;
-    display: inline-block;
-    padding: 0.9rem 3rem;
-    font-size: 1.7rem;
-    color: rgb(47, 65, 137);
-    background: var(--main-color);
-    cursor: pointer;
-    
+.carousel-inner .item img{
+width: 60rem;
+height: 60rem;
 }
 
 
@@ -306,7 +277,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(25, 163, 171);
     background-size: cover;
     background-position: center;
 }
@@ -323,7 +294,7 @@ section{
     font-size: 16rem;
     color: rgb(52, 69, 199);
     margin-top: 8rem;
-    background: linear-gradient(rgb(62, 62, 133), rgb(255, 255, 255));
+   /* background: linear-gradient(rgb(62, 62, 133), rgb(255, 255, 255));*/
     text-shadow: 1px 1px 1px #000;
 
     
@@ -748,6 +719,11 @@ section{
        
         margin-right: 15rem;
     }
+
+    .carousel-inner .item img{
+        width: 30rem;
+        height: 30rem;
+        }
 }
 
 
