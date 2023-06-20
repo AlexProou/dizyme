@@ -599,7 +599,7 @@ align-items: center;
         text-align: center;
         display: flex;
         flex-direction: column;
-        margin-top: 10rem;
+        margin-top: 0rem;
     }
 
     .home .content h3{
