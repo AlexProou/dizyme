@@ -721,12 +721,12 @@ height: 60rem;
     }
 
     .carousel-inner .item img{
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
         }
         .container_slider{
-            width: 30rem;
-            height: 30rem; 
+            width: 20rem;
+            height: 20rem; 
         }
 }
 
