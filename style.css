@@ -84,7 +84,7 @@ section{
 
 
 .header{
-  /*  background:rgb(49 135 135);*/
+  background:rgb(49 135 135);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -722,7 +722,7 @@ section{
 
 
 
-@media (max-width:320px) {
+@media (min-width:320px) {
     #menu-btn{
         display: inline-block;
     }
