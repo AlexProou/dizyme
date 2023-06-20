@@ -613,7 +613,7 @@ height: 60rem;
 
 
 
-@media (max-width:480px) {
+@media (max-width:320px) {
 
 
     html::-webkit-scrollbar{
