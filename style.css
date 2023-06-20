@@ -636,7 +636,7 @@ section{
 
 
 
-@media (max-width:768px) {
+@media (max-width:480px) {
 
     #menu-btn{
         display: inline-block;
@@ -710,7 +710,7 @@ section{
     }
     .home .content .btn{
         border-radius: 20px;
-        margin: 1rem;
+        margin: 0.5rem;
     }
     
 
