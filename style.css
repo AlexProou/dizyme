@@ -251,7 +251,7 @@ section{
     color: rgb(89, 95, 152);
     cursor: pointer;
     font-size: 2.5rem;
-    margin-right: 5rem;
+    margin-right: 15rem;
 }
 
 
@@ -588,7 +588,7 @@ section{
         height: 10rem;
         width: 30rem;
         color: #fff;
-        margin-left: 15rem;
+        margin-left: 5rem;
     }
 
     .home1 .content h3{
@@ -629,6 +629,12 @@ section{
     }
     .blog .row .image{
         flex: 1 1 45rem;
+    }
+
+    
+    .header .icons div{
+       
+        margin-right: 15rem;
     }
 }
 
@@ -675,7 +681,7 @@ section{
         height: 10rem;
         width: 30rem;
         color: #fff;
-        margin-left: 15rem;
+        margin-left: 5rem;
     }
 
     .home1 .content h3{
@@ -720,6 +726,11 @@ section{
     }
     .blog .row .image{
         flex: 1 1 45rem;
+    }
+
+    .header .icons div{
+       
+        margin-right: 15rem;
     }
 }
 
