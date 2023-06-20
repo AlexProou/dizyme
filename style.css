@@ -83,6 +83,10 @@ section{
 }
 
 
+
+
+
+
 .header{
   background:var(--bg);
     display: flex;
@@ -103,6 +107,8 @@ section{
 }
 
 
+    
+  
 .header_menu__list {
     position: relative;
     list-style-type: none;
@@ -453,6 +459,15 @@ height: 60rem;
 .footer{
     background: rgb(46, 96, 167);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+     align-content: space-around;
+
+justify-content: space-evenly;
+
+align-items: center;
 }
 
 .footer .shar{
