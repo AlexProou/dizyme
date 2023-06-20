@@ -635,7 +635,7 @@ section{
 
 
 
-@media (max-width:480px) {
+@media (max-width:768px) {
 
     #menu-btn{
         display: inline-block;
@@ -722,10 +722,85 @@ section{
 
 
 
-@media (max-width:450px) {
+@media (max-width:320px) {
+    #menu-btn{
+        display: inline-block;
+    }
 
-    html{
-        font-size: 50%;
+    .navbar {
+        margin-right: 0rem;
+        
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: var(--bg);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: rgb(74 71 155);;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .header .logo img{
+        height: 10rem;
+        width: 30rem;
+        color: #fff;
+        margin-left: 15rem;
+    }
+
+    .home1 .content h3{
+     display: none;
+       
+    }
+    .home1 p{
+        font-size: 2rem;
+        font-weight: lighter;
+        line-height: 1.2;
+        padding: 1rem 0;    
+        color: rgb(42, 64, 173);
+        margin-top: 12rem;
+        text-align:  center;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .home .content h3{
+        font-size: 11.5rem;
+    }
+
+    .home .content p{
+        font-size: 2.5rem;
+    }
+    
+
+    .blog .row .image img{
+        width: 100%;
+        height: 35rem;
+    }
+    .blog .row .image{
+        flex: 1 1 45rem;
     }
 
   
