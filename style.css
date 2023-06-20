@@ -84,7 +84,7 @@ section{
 
 
 .header{
-  background:rgb(255, 255, 255);
+  background:var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
