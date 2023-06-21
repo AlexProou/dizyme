@@ -4,7 +4,7 @@
 :root{
     --main-color:rgb(71, 107, 205);
     --White:#ffffff;
-    --bg:rgb(238, 238, 238);
+    --bg:rgb(96 230 181);
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -459,7 +459,7 @@ height: 60rem;
 }
 
 .footer{
-    background: rgb(46, 96, 167);
+    background: rgb(96 230 181);
     text-align: center;
     display: flex;
     flex-direction: column;
