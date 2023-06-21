@@ -4,7 +4,7 @@
 :root{
     --main-color:rgb(71, 107, 205);
     --White:#ffffff;
-    --bg:rgb(96 230 181);
+    --bg:rgb(96 230 220);
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -143,7 +143,7 @@ section{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--bg);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -165,14 +165,15 @@ section{
 .dropdown:hover .dropbtn {background-color: #ffffff;}
 
 .navbar {
-    margin-right: 25rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
     
 }
 
 .navbar a, .right-nav a{
     margin: 0 2rem;
     
-    color: rgb(20, 30, 97);
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
    
@@ -186,7 +187,7 @@ section{
     right:0;
     bottom:-3px;
     height: 2px;
-    background-color: rgb(20, 30, 97);
+    background-color: white;
     position: absolute;
     transition: width .2s linear;
 }
@@ -198,12 +199,14 @@ section{
 
 .navbar a{
     font-size: 2rem;
-    color: rgb(20, 30, 97);
+    color: rgb(20 49 41);
     
    
 }
 .right-nav{
-    font-size: 2rem;
+    
+   
+    font-size: 4rem;
     position: fixed;
     right:1rem;
     top:2rem;
@@ -211,7 +214,10 @@ section{
     display: flex;
     align-items: center;
 }
-
+.header .nav-right {
+    font-size: 2rem;
+    margin-right: 2re;
+}
 
 /*.navbar {
     margin-right: 2rem;
@@ -255,7 +261,7 @@ section{
 }*/
 
 .header .icons div{
-    color: rgb(89, 95, 152);
+    color: rgb(20 49 41);
     cursor: pointer;
     font-size: 2.5rem;
     margin-right: 15rem;
@@ -300,7 +306,7 @@ height: 60rem;
     flex-wrap: wrap;
     align-content: center;
     font-size: 16rem;
-    color: rgb(52, 69, 199);
+    color: rgb(20 49 41);
     margin-top: 8rem;
    /* background: linear-gradient(rgb(62, 62, 133), rgb(255, 255, 255));*/
     text-shadow: 1px 1px 1px #000;
@@ -544,12 +550,12 @@ align-items: center;
     }
 
     .navbar {
-        margin-right: 0rem;
+        margin-right: -35rem;
         
     }
     .header .navbar{
         position: absolute;
-        top: 100%; right: -100%;
+        top: 76%; right: -100%;
         background: var(--bg);
         width: 30rem;
         height: calc(100vh - 9.5rem);
@@ -560,7 +566,7 @@ align-items: center;
     }
 
     .header .navbar a{
-        color: rgb(74 71 155);;
+        color: rgb(20 49 41);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
@@ -652,15 +658,16 @@ body{
 
     #menu-btn{
         display: inline-block;
+       
     }
 
     .navbar {
-        margin-right: 0rem;
+        margin-right: -35rem;
         
     }
     .header .navbar{
         position: absolute;
-        top: 100%; right: -100%;
+        top: 76; right: -100%;
         background: var(--bg);
         width: 56rem;
         height: calc(100vh - 9.5rem);
@@ -671,7 +678,7 @@ body{
     }
 
     .header .navbar a{
-        color: rgb(74 71 155);;
+        color: rgb(20 49 41);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
@@ -748,7 +755,7 @@ body{
 
 body{
     background: var(--White);
-    width: 133%;  
+    width: 180%;  
 }
     html::-webkit-scrollbar{
         width: .8rem;
@@ -770,12 +777,12 @@ body{
     }
 
     .navbar {
-        margin-right: 0rem;
+        margin-right: -35rem;
         
     }
     .header .navbar{
         position: absolute;
-        top: 100%; right: -100%;
+        top: 76%; right: -100%;
         background: var(--bg);
         width: 56rem;
         height: calc(100vh - 9.5rem);
@@ -786,7 +793,7 @@ body{
     }
 
     .header .navbar a{
-        color: rgb(74 71 155);;
+        color: rgb(20 49 41);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
