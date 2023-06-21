@@ -440,7 +440,7 @@ height: 60rem;
 }
 
 .footer{
-    background: rgb(96 230 181);
+    background:var(--bg);
     text-align: center;
     display: flex;
     flex-direction: column;
