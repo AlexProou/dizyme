@@ -84,7 +84,21 @@ section{
 }
 
 
+nav .login-signup {
+    display: none;
+}
 
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
 
 
 
@@ -219,46 +233,7 @@ section{
     margin-right: 2re;
 }
 
-/*.navbar {
-    margin-right: 2rem;
-    
-}
 
-.navbar a{
-    margin: 0 2rem;
-    font-size: 2rem;
-    color: rgb(20, 30, 97);
-}
-
-.navbar a:before{
-    content: '';
-    width: 0;
-    right: 0;
-    bottom: -3px;
-    height: 3px;
-    background-color: rgb(25, 83, 164);
-    position: absolute;
-    transition: width .2s linear;
-}
-
-.navbar a:hover:before{
-    right: initial;
-    left: 0;
-    width: 100%;
-    
-}
-
-.nav-right {
-    margin-right: 2rem;
-    font-size: 2rem;
-    
-}
-
-/*.header .navbar a:before{
-    color: rgb(74 71 155);
-    border-bottom: 1rem solid var(--main-color);
-    padding-bottom: .5rem;
-}*/
 
 .header .icons div{
     color: rgb(20 49 41);
@@ -532,7 +507,7 @@ align-items: center;
 }
 
 
-@media (max-width:991px) {
+@media only screen and (max-width: 1000px) {
 
     html{
         font-size: 55%;
@@ -555,10 +530,11 @@ align-items: center;
     }
     .header .navbar{
         position: absolute;
-        top: 76%; right: -100%;
+        top: 76%; 
+        right: -100%;
         background: var(--bg);
         width: 30rem;
-        height: calc(100vh - 9.5rem);
+        height: calc(70vh - 9.5rem);
     }
 
     .header .navbar.active{
@@ -630,128 +606,16 @@ align-items: center;
        
         margin-right: 15rem;
     }
+
+    header .header-right .login-signup {
+        display: none;
+    }
 }
 
 
 
 
-
-@media (max-width:527px) {
-body{
-    width: 133%;
-}
-
-    html::-webkit-scrollbar{
-        width: .8rem;
-    }
-    
-    html::-webkit-scrollbar-track{
-        background: transparent;
-    }
-    
-    html::-webkit-scrollbar-thumb{
-        background: rgb(0, 0, 0);
-        border-radius: 5rem;
-    }
-
-
-
-    #menu-btn{
-        display: inline-block;
-       
-    }
-
-    .navbar {
-        margin-right: -35rem;
-        
-    }
-    .header .navbar{
-        position: absolute;
-        top: 76; right: -100%;
-        background: var(--bg);
-        width: 56rem;
-        height: calc(100vh - 9.5rem);
-    }
-
-    .header .navbar.active{
-        right: 0;
-    }
-
-    .header .navbar a{
-        color: rgb(20 49 41);
-        display: block;
-        margin: 1.5rem;
-        padding: .5rem;
-        font-size: 2rem;
-    }
-
-    .header .search-form{
-        width: 90%;
-        right: 2rem;
-    }
-
-    .header .logo img{
-        height: 10rem;
-        width: 30rem;
-        color: #fff;
-        margin-left: 5rem;
-    }
-
-    .home1 .content h3{
-     display: none;
-       
-    }
-    .home1 p{
-        font-size: 2rem;
-        font-weight: lighter;
-        line-height: 1.2;
-        padding: 1rem 0;    
-        color: rgb(42, 64, 173);
-        margin-top: 12rem;
-        text-align:  center;
-    }
-
-    .home{
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        margin-top: 0rem;
-        
-    }
-
-    .home .content h3{
-        font-size: 11.5rem;
-    }
-
-    .home .content p{
-        font-size: 2.5rem;
-    }
-    .home .content .btn{
-        border-radius: 20px;
-        margin: 0.5rem;
-    }
-    
-
-    .blog .row .image img{
-        width: 100%;
-        height: 35rem;
-    }
-    .blog .row .image{
-        flex: 1 1 45rem;
-    }
-
-    .header .icons div{
-       
-        margin-right: 15rem;
-    }
-
-   
-}
-
-
-@media (max-width:320px) {
+@media only screen and (max-width: 450px) {
 
 body{
     background: var(--White);
@@ -782,10 +646,11 @@ body{
     }
     .header .navbar{
         position: absolute;
-        top: 76%; right: -100%;
+        top: 76%; 
+        right: -100%;
         background: var(--bg);
         width: 56rem;
-        height: calc(100vh - 9.5rem);
+        height: calc(70vh - 9.5rem);
     }
 
     .header .navbar.active{
@@ -859,10 +724,16 @@ body{
 
     .header .icons div{
        
-        margin-right: 15rem;
+        margin-right: 3rem;
     }
 
-   
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
 }
 
 
