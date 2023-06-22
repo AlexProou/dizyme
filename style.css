@@ -628,7 +628,7 @@ align-items: center;
    
    
       html{
-          font-size: 55%;
+          font-size: 45%;
       }
   
       .header{
@@ -693,6 +693,11 @@ align-items: center;
           text-align:  center;
       }
   
+      .home, .home1, .box-container, .footer, .blog {
+        width: 120%;
+      }
+
+
       .home{
           background-position: left;
           justify-content: center;
@@ -749,12 +754,12 @@ align-items: center;
 
 @media only screen and (max-width: 380px) {
 
-  body{
-    width:120%;
-  }
+    body{
+        width:100%;
+      }
  
     html{
-        font-size: 45%;
+        font-size: 35%;
     }
 
    
