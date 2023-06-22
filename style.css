@@ -623,14 +623,10 @@ align-items: center;
 }
 
 
-
-
-
-
 @media only screen and (max-width: 380px) {
 
-   
-
+  
+ 
     html{
         font-size: 55%;
     }
@@ -742,6 +738,9 @@ align-items: center;
     }
     }
     
-    
-    
-    
+
+
+
+   
+   
+   
