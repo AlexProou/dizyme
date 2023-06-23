@@ -2,11 +2,11 @@
 
 
 :root{
-    --main-color:rgb(71, 107, 205);
+    --main-color:rgb(166, 175, 199);
     --White:#ffffff;
     --bg:rgb(96 230 220);
     --bg1:#dae4e5;
-    --bg2:#2b4a4a;
+    --bg2:#386c72;
     --bg3:#dae9e9;
     --bg4:#296e6b;
     --bg5:#94c0c2;
@@ -109,7 +109,7 @@ header .login-signup a {
 
 
 .header{
-  background:#2b4a4a;
+  background:var(--bg2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -548,6 +548,10 @@ align-items: center;
 
 .footer .credit span{
     color: black;
+}
+
+.footer .credit span a{
+    color: var(--bg3);
 }
 
 .footer .credit span a:hover{
