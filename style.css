@@ -69,7 +69,7 @@ section{
 }
 
 .heading span{
-    color: var(--main-color);
+    color: var(--bg2);
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
 }
