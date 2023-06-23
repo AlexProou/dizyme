@@ -101,7 +101,7 @@ header .login-signup {
 header .login-signup a {
     display: inline-block;
     color: #0b2239;
-    background: var(--bg3);
+    background: var(--bg5);
     padding: 5px 12px;
     border-radius: 5px;
 }
@@ -586,7 +586,7 @@ align-items: center;
         position: absolute;
         top: 76%; 
         right: -100%;
-        background: var(--bg);
+        background: var(--bg2);
         width: 56rem;
         height: calc(70vh - 9.5rem);
     }
@@ -596,7 +596,7 @@ align-items: center;
     }
 
     .header .navbar a{
-        color: rgb(20 49 41);
+        color:var(--bg1);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
@@ -659,7 +659,15 @@ align-items: center;
     .blog .row .image{
         flex: 1 1 45rem;
     }
-
+    .menu .box-container {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+        gap: 11.5em;
+        align-content: stretch;
+        justify-content: space-around;
+        align-items: stretch;
+        justify-items: center;
+    }
     .header .icons div{
        
         margin-right: 3rem;
@@ -675,7 +683,7 @@ align-items: center;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 550px) {
 
    
    
