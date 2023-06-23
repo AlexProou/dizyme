@@ -5,6 +5,11 @@
     --main-color:rgb(71, 107, 205);
     --White:#ffffff;
     --bg:rgb(96 230 220);
+    --bg1:#dae4e5;
+    --bg2:#2b4a4a;
+    --bg3:#dae9e9;
+    --bg4:#296e6b;
+    --bg5:#94c0c2;
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -46,7 +51,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: var(--White);  
+    background: var(--bg1);  
 }
 
 section{
@@ -75,8 +80,9 @@ section{
     padding: .9rem 3rem;
     font-size: 1.7rem;
     color: rgb(0, 0, 0);
-    background: var(--main-color);
+    background: var(--bg3);
     cursor: pointer;
+    border: 2px solid #ffffff;
 }
 
 .btn:hover{
@@ -95,7 +101,7 @@ header .login-signup {
 header .login-signup a {
     display: inline-block;
     color: #0b2239;
-    background: #4ad295;
+    background: var(--bg3);
     padding: 5px 12px;
     border-radius: 5px;
 }
@@ -103,7 +109,7 @@ header .login-signup a {
 
 
 .header{
-  background:var(--bg);
+  background:#2b4a4a;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,18 +129,8 @@ header .login-signup a {
 
 
     
-  
-.header_menu__list {
-    position: relative;
-    list-style-type: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    display: flex;
-    margin-right: 30px;
-    display: flex;
-    justify-content: flex-end;
-    
-
+.header-right {
+    margin-right: 3rem;
 }
 
 
@@ -157,7 +153,7 @@ header .login-signup a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--bg);
+    background-color: var(--bg2);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -172,7 +168,7 @@ header .login-signup a {
 }
 
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: var(--bg4)}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -213,7 +209,7 @@ header .login-signup a {
 
 .navbar a{
     font-size: 2rem;
-    color: rgb(20 49 41);
+    color: #dae4e5;
     
    
 }
@@ -236,7 +232,7 @@ header .login-signup a {
 
 
 .header .icons div{
-    color: rgb(20 49 41);
+    color: #dae4e5;
     cursor: pointer;
     font-size: 2.5rem;
     margin-right: 15rem;
@@ -266,7 +262,7 @@ height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(25, 163, 171);
+    background-color: var(--bg3);
     background-size: cover;
     background-position: center;
 }
@@ -294,7 +290,7 @@ height: 60rem;
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;    
-    color: rgb(67, 48, 171);
+    color: var(--bg2);
 }
 
 .home1 p{
@@ -318,7 +314,7 @@ height: 60rem;
         display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(29, 156, 187);;
+    background-color: var(--bg4);
     background-size: cover;
     background-position: center;
 }
@@ -388,7 +384,7 @@ height: 60rem;
 
 
 .menu .box-container .box:hover{
-    background: rgb(121 230 226);
+    background: var(--bg5);
 }
 
 .menu .box-container .box:hover > *{
@@ -397,14 +393,14 @@ height: 60rem;
 
 
 .blog {
-    background: rgb(29, 156, 187);
+    background: var(--bg3);
 }
 
 
 .blog .row{
     display: flex;
     align-items: center;
-    background: rgb(46, 96, 167);
+    background: var(--bg3);
     flex-wrap: wrap;
 }
 
@@ -440,7 +436,7 @@ height: 60rem;
 }
 
 .footer{
-    background:var(--bg);
+    background:var(--bg2);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -452,6 +448,58 @@ justify-content: space-evenly;
 
 align-items: center;
 }
+
+.contact .row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center; 
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg3);
+    border: 2px solid #ffffff;
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+
+
 
 .footer .shar{
     padding: 1rem 0;
@@ -628,10 +676,12 @@ align-items: center;
    
    
       html{
+        width: 100%;
           font-size: 45%;
       }
   
       .header{
+        width: 100%;
           padding: 1.5rem 2rem;
       }
       section{
@@ -650,7 +700,7 @@ align-items: center;
           position: absolute;
           top: 76%; 
           right: -100%;
-          background: var(--bg);
+          background: var(--bg2);
           width: 65rem;
           height: calc(70vh - 9.5rem);
       }
@@ -660,7 +710,7 @@ align-items: center;
       }
   
       .header .navbar a{
-          color: rgb(20 49 41);
+          color: var(--bg1);
           display: block;
           margin: 1.5rem;
           padding: .5rem;
@@ -693,8 +743,8 @@ align-items: center;
           text-align:  center;
       }
   
-      .home, .home1, .box-container, .footer, .blog {
-        width: 120%;
+      .home, .home1, .box-container, .footer, .blog, .contact {
+        width: 135%;
       }
 
 
@@ -752,14 +802,12 @@ align-items: center;
   
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 320px) {
 
-    body{
-        width:100%;
-      }
+    
  
     html{
-        font-size: 35%;
+        font-size: 45%;
     }
 
    
@@ -776,7 +824,7 @@ align-items: center;
         position: absolute;
         top: 76%; 
         right: -100%;
-        background: var(--bg);
+        background: var(--bg2);
         width: 56rem;
         height: calc(70vh - 9.5rem);
     }
@@ -786,7 +834,7 @@ align-items: center;
     }
 
     .header .navbar a{
-        color: rgb(20 49 41);
+        color: #dae4e5;
         display: block;
         margin: 1.5rem;
         padding: .5rem;
