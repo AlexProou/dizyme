@@ -10,6 +10,12 @@
     --bg3:#dae9e9;
     --bg4:#296e6b;
     --bg5:#94c0c2;
+
+    --bg1n:#293241;
+    --bg2n:#ee6b4f;
+    --bg3n:#3b5b81;
+    --bg4n:#98c0d9;
+    
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -125,6 +131,7 @@ header .login-signup a {
     width: 25rem;
     color: #fff;
     margin-left: 2rem;
+    text-shadow: #ccc;
 }
 
 
@@ -257,7 +264,7 @@ height: 60rem;
 
 
 .home1{
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -308,6 +315,13 @@ height: 60rem;
     border-radius: 20px;
     margin: 2rem;
 }
+
+
+
+ 
+    
+  
+  
 
 .home{
     min-height: 100vh;
@@ -412,12 +426,15 @@ height: 60rem;
 
 .blogs .box-container2 .box{
     border: var(--bg4);
+    display: flex;
+    
+    flex-direction: row;
 }
 
 .blogs .box-container2 .box .image{
     height: 25rem;
     overflow: hidden;
-    width: 100%;
+    width: 16%;
 }
 
 .blogs .box-container2 .box .image img{
@@ -635,7 +652,157 @@ align-items: center;
 
 
 
+@media (max-width:768px) {
 
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .navbar {
+        margin-right: -35rem;
+        
+    }
+    .header .navbar{
+        position: absolute;
+        top: 70%; 
+        right: -100%;
+        background: var(--bg2);
+        width: 65rem;
+        height: calc(80vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .home1 .content h3 {
+       
+        font-size: 13rem;
+       
+    }
+    .header .navbar a{
+        color: var(--bg1);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+
+    .blogs .box-container2 .box{
+        border: var(--bg4);
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    .blogs .box-container2 .box .image{
+        height: 50rem;
+        overflow: hidden;
+         width: 73%;
+        margin-left: 5rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width:450px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .home1 .content h3 {
+       
+        font-size: 10rem;
+       
+    }
+ 
+    .blogs .box-container2 .box .image{
+        height: 50rem;
+        overflow: hidden;
+         width: 73%;
+        margin-left: 5rem;
+    }
+
+    .blogs .box-container2 .box{
+        border: var(--bg4);
+        display: flex;       
+        flex-direction: column;
+    }
+
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    .navbar {
+        margin-right: -35rem;
+        
+    }
+    .header .navbar{
+        position: absolute;
+        top: 70%; 
+        right: -100%;
+        background: var(--bg2);
+        width: 65rem;
+        height: calc(70vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: var(--bg1);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    .home, .home1, .box-container, .footer, .blogs, .contact {
+        width: 135%;
+      }
+}
+
+@media (max-width:320px) {
+
+    html{
+        font-size: 40%;
+    }
+
+}
+
+
+
+
+/*
 @media only screen and (max-width: 1000px) {
    
     html{
@@ -736,7 +903,7 @@ align-items: center;
     }
     .menu .box-container {
         display: grid;
-        /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+        /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */ /*
         gap: 11.5em;
         align-content: stretch;
         justify-content: space-around;
@@ -756,8 +923,8 @@ align-items: center;
         display: none;
     }
 }
-
-
+*/
+/*
 @media only screen and (max-width: 550px) {
 
    
@@ -886,14 +1053,14 @@ align-items: center;
       }
       }
       
-  
+  */
   
   
      
      
      
   
-
+/*
 
 @media only screen and (max-width: 320px) {
 
@@ -1012,5 +1179,5 @@ align-items: center;
 
 
    
-   
+   */
    
