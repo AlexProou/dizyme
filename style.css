@@ -322,10 +322,26 @@ height: 60rem;
 }
 
 
-
  
-    
-  
+
+
+
+svg circle.cir:hover {
+   transform: scale(1.1);
+}
+svg circle{
+    transition: 1s;
+ }
+
+ svg text:hover {
+    transform: scale(1.05);
+ }
+ svg text{
+     transition: 1s;
+     color: rgb(255, 255, 255);
+  }
+
+
   
 
 .home{
