@@ -5,3 +5,5 @@ document.querySelector('#menu-btn').onclick = () =>{
 }
 
 
+$("#block").fadeIn(1000);
+$("#block_p").fadeIn(2000);
