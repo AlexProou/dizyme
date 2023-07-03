@@ -190,6 +190,25 @@ header .login-signup a {
     
 }
 
+
+/* Задаем высоту большим блокам, чтобы у нас на странице получится скролл */
+.element-big  {
+    width: 100%;
+    height: 1200px;
+  }
+  .element-animation {
+    margin: 2rem 0;
+    font-size: 3rem;
+    
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+  }
+
+  .element-animation.element-show {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
 .navbar a, .right-nav a{
     margin: 0 2rem;
     
@@ -263,7 +282,27 @@ width: 60rem;
 height: 60rem;
 }
 
-
+#chembl-header-container.pinned .burger-dropdown .dropdown-contents {
+    top: 39px;
+}
+.dropdown.burger-dropdown .dropdown-contents {
+    position: fixed;
+    left: 0;
+    width: 101%;
+    margin-top: 15px;
+    max-height: calc(100vh - 54px - 40px);
+    overflow-y: scroll;
+    background-color: white;
+    box-shadow: 0 1px 4px 0 #e4e4e4;
+    transition: transform 600ms ease-in-out;
+    transition: -webkit-transform 600ms ease-in-out;
+    -webkit-transition: transform 700ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+}
+.burger-dropdown-contents.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
 
 
 .home1{
