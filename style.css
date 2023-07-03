@@ -351,16 +351,16 @@ height: 60rem;
     
 }
 .draw_circle .circle{
-    width: 100px;
-    height: 100px;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     background-color: #296e6b;
     margin-top: 2rem;
 }
 
 .draw_circle .circle1{
-    width: 120px;
-    height: 120px;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     background-color: #296e6b;
     margin-top: 10rem;
@@ -382,8 +382,8 @@ height: 60rem;
 
 
 .draw_circle .circle2{
-    width: 120px;
-    height: 120px;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     background-color: #296e6b;
     margin-top: 3rem;
@@ -396,8 +396,8 @@ height: 60rem;
     transition: 0.5s;
 }
 .draw_circle .circle3{
-    width: 130px;
-    height: 130px;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     background-color: #296e6b;
     margin-top: 12rem;
@@ -410,8 +410,8 @@ height: 60rem;
     transition: 0.5s;
 }
 .draw_circle .circle4{
-    width: 150px;
-    height: 150px;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     background-color: #296e6b;
 }
@@ -475,6 +475,7 @@ height: 60rem;
 
 .menu .box-container{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5em;
     
@@ -756,7 +757,7 @@ align-items: center;
 @media (max-width:1400px) {
 
     html{
-        font-size: 55%;
+        font-size: 70%;
     }
 
     .header{
@@ -769,7 +770,7 @@ align-items: center;
 }
 
 
-@media (max-width:991px) {
+@media (max-width:1100px) {
 
     html{
         font-size: 55%;
@@ -785,7 +786,7 @@ align-items: center;
 }
 
 @media (max-width:768px) {
-
+   
     #menu-btn{
         display: inline-block;
     }
@@ -895,8 +896,119 @@ align-items: center;
         margin-left: 13rem;
     }
  
+.home1 {
+    height: 90rem;
+}
+.draw_circle h4{
+    font-size: 1.5rem;
+    font-weight: lighter; 
+    line-height: 1.2;
+   /*  padding: 1rem 0; */
+    color: rgb(255, 255, 255);
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.draw_circle .circle h4{
+    margin-top: 4rem;
+}
+.draw_circle .circle4 h4{
+    margin-top: 6rem;
+}
+
+
 .draw_circle{
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: stretch;
+ 
+    justify-content: center;
+       
+    
+    align-items: stretch;
+    height: 27rem;
+    width: 70rem;
+   
+    
+}
+.draw_circle .circle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #296e6b;
+    margin-top: 6rem;
+    margin-left: 6rem;
+}
+
+.draw_circle .circle1{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: #296e6b;
+    margin-top: 10rem;
+    margin-left: 9rem;
+}
+
+.draw_circle .circle:hover{
+    transform: scale(1.1);
+}
+.draw_circle .circle{
+    transition: 0.5s;
+}
+
+.draw_circle .circle1:hover{
+    transform: scale(1.1);
+}
+.draw_circle .circle1{
+    transition: 0.5s;
+}
+
+
+.draw_circle .circle2{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: #296e6b;
+    margin-top: 6rem;
+    margin-left: 6rem;
+}
+
+.draw_circle .circle2:hover{
+    transform: scale(1.1);
+}
+.draw_circle .circle2{
+    transition: 0.5s;
+}
+.draw_circle .circle3{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-color: #296e6b;
+    margin-top: -1rem;
+    margin-left: 6rem;
+}
+
+.draw_circle .circle3:hover{
+    transform: scale(1.1);
+}
+.draw_circle .circle3{
+    transition: 0.5s;
+}
+.draw_circle .circle4{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: #296e6b;
+    margin-top: 6rem;
+    margin-left: 6rem;
+}
+
+.draw_circle .circle4:hover{
+    transform: scale(1.1);
+}
+.draw_circle .circle4{
+    transition: 0.5s;
 }
 
     .blogs .box-container2 .box .image{
