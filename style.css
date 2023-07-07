@@ -771,11 +771,17 @@ align-items: center;
     section{
         padding: 2rem ;
     }
-
+    .draw_circle{
+        display: flex;
+        flex-direction: row;
+        height: 20rem;
+        width: 60rem;
+        margin-left: 1rem;
+    }
 }
 
 
-@media (max-width:1100px) {
+@media (max-width:1350px) {
 
     html{
         font-size: 55%;
@@ -787,8 +793,22 @@ align-items: center;
     section{
         padding: 2rem ;
     }
-
+  
 }
+
+@media (max-width:1100px) {
+
+ 
+    #disk {
+        display: flex;
+        flex-direction: column;
+    }
+    
+  
+
+    
+}
+
 
 @media (max-width:768px) {
    
